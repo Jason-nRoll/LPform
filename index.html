@@ -6,7 +6,68 @@
         <script src="script.js"></script>
     </head>
     <body>
-        <h2>Enter tasks</h2>
+        <h4 id="pageHeader">Enter tasks</h4>
+        <div id="container">
+            <div id="main">
+                <form onsubmit="return submitTask();">
+                    <table id="tableBlob">
+                        <tr>
+                            <td>
+                                <label for="ownerBox">Owner: </label>
+                            </td>
+                            <td>
+                                <input id="ownerBox" type="text" size="25">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="clientBox">Client: </label>
+                            </td>
+                            <td>
+                                <input id="clientBox" type="text" size="25">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="platformBox">Platform: </label>
+                            </td>
+                            <td>
+                                <input id="platformBox" type="text" size="25">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="groupBox">Group: </label>
+                            </td>
+                            <td>
+                                <input id="groupBox" type="text" size="25">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="carrierBox">Carrier: </label>
+                            </td>
+                            <td>
+                                <input id="carrierBox" type="text" size="25">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="notesBox">Notes: </label>
+                            </td>
+                            <td>
+                                <textarea id="notesBox" type="text" rows="5" cols="26"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input id="submit" type="submit" align="middle">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                <div id="results"></div>
+            </div>
+        </div>
     </body>
-    <button onclick="alertText('Hello')">Run test</button>
 </html>
