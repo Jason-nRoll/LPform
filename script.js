@@ -1,5 +1,5 @@
 function alertHello()
 {
-    alert("hello");
+    alert("hello world");
     return;
 }
