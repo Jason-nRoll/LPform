@@ -1,79 +1,72 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>LiquidPlanner Form</title>
-        <link rel="stylesheet" type="text/css" href="./css/site.css">
-        <script src="script.js"></script>
-    </head>
-    <body>
-        <h4 id="pageHeader">Enter tasks</h4>
-        <div id="container">
-            <div id="main">
-                <form onsubmit="return submitTask();">
-                    <table id="tableBlob">
-                        <tr>
-                            <td>
-                                <label for="ownerDrop">Owner: </label>
-                                <br>
-                                <select id="ownerDrop"  value="owner">
-                                        <option value="RyanA">RyanA</option>
-                                        <option value="HenryS">HenryS</option>
-                                        <option value="JasonS">HenryS</option>
-                                </select>
-                            </td>
-                            <td>
-                                <label for="clientDrop">Client: </label>
-                                <br>
-                                <select id="clientDrop"  value="client">
-                                        <option value="AXA">AXA</option>
-                                        <option value="Client1">Client1</option>
-                                        <option value="Client2">Client2</option>
-                                </select>
-                            </td>
-                            <td>
-                                <label for="platformDrop">Platform: </label>
-                                <br>
-                                <select id="platformDrop" value="platform">
-                                        <option value="Platform1">Platform1</option>
-                                        <option value="Platform2">Platform2</option>
-                                        <option value="Platform1">Platform3</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="groupBox" value="group">Group: </label>
-                            </td>
-                            <td colspan="2">
-                                <input id="groupBox" type="text">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="carrierBox" value="carrier">Carrier: </label>
-                            </td>
-                            <td colspan="2">
-                                <input id="carrierBox" type="text">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="notesBox">Notes: </label>
-                            </td>
-                            <td colspan="2">
-                                <textarea id="notesBox" type="text" value="notes" rows="5" cols="30"></textarea>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                <input id="submit" type="submit" align="middle">
-                            </td>
-                        </tr>
-                    </table>
-                </form>
-                <div id="results"></div>
-                <a href="./index2.html">Index V2</a>
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nRoll Tech Intake Form</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <div class="padTop5perc">
+      <div class="translucent-form-overlay float-center">
+        <form>
+          <h3>Add Tasks to LiquidPlanner</h3>
+            <div class="row columns">
+              <label>Owner
+                <select name="owner" type="text">
+                  <option value="Unassigned">Unassigned</option>
+                  <option value="RyanA">RyanA</option>
+                  <option value="HenryS">HenryS</option>
+                  <option value="JasonS">JasonS</option>
+                </select>
+              </label>
             </div>
+            <div class="row columns">
+              <label>Client
+                <select name="client" type="text">
+                  <option value="None">None</option>
+                  <option value="AXA">AXA</option>
+                  <option value="BenSel">BenSel</option>
+                  <option value="HUB">HUB</option>
+                  <option value="Kapnick">Kapnick</option>
+                </select>
+              </label>
+            </div>
+            <div class="row columns">
+              <label>Platform
+                <select name="platform" type="text">
+                  <option value="None">None</option>
+                  <option value="Platform1">Platform 1</option>
+                  <option value="Platform2">Platform 2</option>
+                </select>
+              </label>
+            </div>
+            <div class="row columns">
+              <label>Group
+                <input type="text" name="group" placeholder="Enter Group">
+              </label>
+            </div>
+            <div class="row columns">
+              <label>Carrier
+                <input type="text" name="carrier" placeholder="Enter Carrier">
+              </label>
+            </div>
+            <div class="row columns">
+              <label>Notes
+                <textarea name="notes" placeholder="Enter notes" rows="4"></textarea>
+              </label>
+            </div>
+            <button type="button" class="primary button expanded search-button">
+              Search
+            </button>
+         </form>
         </div>
+      </div>
+      <script src="js/vendor/jquery.js"></script>
+      <script src="js/vendor/what-input.js"></script>
+      <script src="js/vendor/foundation.js"></script>
+      <script src="js/app.js"></script>
     </body>
 </html>
