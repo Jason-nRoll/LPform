@@ -1,10 +1,72 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>LiquidPlanner Form</title>
-    </head>
-    <body>
-        <h2>Enter tasks</h2>
-        <p>test</p>
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nRoll Tech Intake Form</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <div>
+      <div class="translucent-form-overlay float-center">
+        <form onsubmit="return submitTest();">
+          <h3>Add Tasks to LiquidPlanner</h3>
+            <div class="row columns">
+              <label>Owner
+                <select name="owner" type="text">
+                  <option value="Unassigned">Unassigned</option>
+                  <option value="RyanA">RyanA</option>
+                  <option value="HenryS">HenryS</option>
+                  <option value="JasonS">JasonS</option>
+                </select>
+              </label>
+            </div>
+            <div class="row columns">
+              <label>Client
+                <select name="client" type="text">
+                  <option value="None">None</option>
+                  <option value="AXA">AXA</option>
+                  <option value="BenSel">BenSel</option>
+                  <option value="HUB">HUB</option>
+                  <option value="Kapnick">Kapnick</option>
+                </select>
+              </label>
+            </div>
+            <div class="row columns">
+              <label>Platform
+                <select name="platform" type="text">
+                  <option value="None">None</option>
+                  <option value="Platform1">Platform 1</option>
+                  <option value="Platform2">Platform 2</option>
+                </select>
+              </label>
+            </div>
+            <div class="row columns">
+              <label>Group
+                <input type="text" name="group" placeholder="Enter Group">
+              </label>
+            </div>
+            <div class="row columns">
+              <label>Carrier
+                <input type="text" name="carrier" placeholder="Enter Carrier">
+              </label>
+            </div>
+            <div class="row columns">
+              <label>Notes
+                <textarea name="notes" placeholder="Enter notes" rows="4"></textarea>
+              </label>
+            </div>
+            <button id="btnSubmit" type="submit" class="primary button expanded search-button">
+              Submit
+            </button>
+         </form>
+        </div>
+      </div>
+      <script src="js/vendor/jquery.js"></script>
+      <script src="js/vendor/what-input.js"></script>
+      <script src="js/vendor/foundation.js"></script>
+      <script src="js/app.js"></script>
     </body>
 </html>
