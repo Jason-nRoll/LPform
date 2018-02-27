@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
-    <div class="padTop5perc">
+    <div>
       <div class="translucent-form-overlay float-center">
-        <form>
+        <form onsubmit="return submitTest();">
           <h3>Add Tasks to LiquidPlanner</h3>
             <div class="row columns">
               <label>Owner
@@ -58,8 +58,8 @@
                 <textarea name="notes" placeholder="Enter notes" rows="4"></textarea>
               </label>
             </div>
-            <button type="button" class="primary button expanded search-button">
-              Search
+            <button id="btnSubmit" type="submit" class="primary button expanded search-button">
+              Submit
             </button>
          </form>
         </div>
