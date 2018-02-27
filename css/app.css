@@ -1,7 +1,12 @@
 body {
-  background-image: url("../images/glass.jpg");
+  background-image: url("../images/fakeOffice.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: center; 
+}
+
+#btnSubmit {
+  background-color: rgb(255, 72, 0);
 }
 
 .padTop5perc {
